@@ -43,8 +43,6 @@ stats <- pstat %>%
   filter(!is.na(player_id)) %>%
   select(player_id, passing_yards, rushing_yards, receiving_yards, week)
 
-summary
-
 #Filter by Regular Season Games and modify variables relating to temperature
 Reg_data <- pbp %>%
   filter(season_type == "REG") %>%
